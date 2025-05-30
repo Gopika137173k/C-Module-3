@@ -18,9 +18,46 @@ To write a C program that finds and sums all odd numbers in a specified range us
 6. Return `0` to indicate successful execution.
 
 ## 💻 Program
-Add Code Here
+```
+#include <stdio.h>
 
+int main() {
+    int m, n, i, sum = 0;
+
+    printf("Enter the starting value (m): ");
+    scanf("%d", &m);
+
+    printf("Enter the ending value (n): ");
+    scanf("%d", &n);
+
+    printf("Odd numbers between %d and %d are:\n", m, n - 1);
+    for (i = m; i < n; i++) {
+        if (i % 2 != 0) {
+            printf("%d ", i);
+            sum += i;
+        }
+    }
+
+    printf("\nSum of odd numbers: %d\n", sum);
+
+    return 0;
+}
+```
 ## Output
+Sample Output 1:
+Enter the starting value (m): 1
+Enter the ending value (n): 10
+Odd numbers between 1 and 9 are:
+1 3 5 7 9 
+Sum of odd numbers: 25
+
+Sample Output 2:
+Enter the starting value (m): 4
+Enter the ending value (n): 15
+Odd numbers between 4 and 14 are:
+5 7 9 11 13 
+Sum of odd numbers: 45
 
 ## Result
+Program was implemented and executed.
 
